@@ -19,7 +19,7 @@ return {
   },
 },
 
-    vim.api.nvim_set_keymap('n', '<leader>cm', "<cmd>CompilerOpen<cr>", { noremap = true, silent = true }),
+    vim.api.nvim_set_keymap('n', '<leader>cmo', "<cmd>CompilerOpen<cr>", { noremap = true, silent = true }),
 
     vim.api.nvim_set_keymap('n', '<leader>cms',
         "<cmd>CompilerStop<cr>" -- (Optional, to dispose all tasks before redo)

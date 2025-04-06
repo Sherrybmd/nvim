@@ -3,10 +3,17 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --my custom trash
-vim.keymap.set("n", "<leader><CR>", "<cmd>cd %/<CR>")
-vim.keymap.set("n", "<leader><BS>", "<cmd>cd ../<CR>")
-vim.keymap.set("n", "<leader>pwd", "<cmd>pwd<CR>")
+vim.keymap.set("n", "<leader><CR>", function()
+    vim.cmd('cd ' .. vim.fn.expand '%:p:h')
+    vim.cmd 'pwd'
+end, { desc = 'Set working directory to path of buffer.' })
 
+vim.keymap.set("n", "<leader><BS>", function()
+    vim.cmd 'cd ..'
+    vim.cmd 'pwd'
+end, { desc = 'Navigate down one directory from current' })
+
+vim.keymap.set("n", "<leader>pwd", "<cmd>pwd<CR>")
 
 --
 
