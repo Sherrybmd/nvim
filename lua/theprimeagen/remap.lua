@@ -15,6 +15,9 @@ end, { desc = 'Navigate down one directory from current' })
 
 vim.keymap.set("n", "<leader>pwd", "<cmd>pwd<CR>")
 
+vim.keymap.set("n", "<leader>l", "<C-w>j<C-w>l")
+vim.keymap.set("n", "<leader>h", "<C-w>h<C-w>k")
+
 --
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
