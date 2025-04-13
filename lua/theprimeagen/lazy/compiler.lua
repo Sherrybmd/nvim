@@ -26,5 +26,5 @@ return {
         .. "<cmd>CompilerRedo<cr>",
         { noremap = true, silent = true }),
 
-    vim.api.nvim_set_keymap('n', '<leader>cmc', "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>C', "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
 }

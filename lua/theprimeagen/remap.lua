@@ -2,23 +2,36 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
---my custom trash
+--my custom trash open
+--{
+
+--set directory for retarded compiler...
 vim.keymap.set("n", "<leader><CR>", function()
     vim.cmd('cd ' .. vim.fn.expand '%:p:h')
     vim.cmd 'pwd'
 end, { desc = 'Set working directory to path of buffer.' })
 
+-- back directory
 vim.keymap.set("n", "<leader><BS>", function()
     vim.cmd 'cd ..'
     vim.cmd 'pwd'
 end, { desc = 'Navigate down one directory from current' })
 
+-- pwd
 vim.keymap.set("n", "<leader>pwd", "<cmd>pwd<CR>")
 
+--jump to topleft/bottomright window
 vim.keymap.set("n", "<leader>l", "<C-w>j<C-w>l")
 vim.keymap.set("n", "<leader>h", "<C-w>h<C-w>k")
 
---
+--:w
+vim.keymap.set("n", "<leader>w", function()
+    vim.cmd 'w'
+end, { desc = 'faster way to do ":w" in console ' })
+
+
+--my custom trash close
+--}
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
