@@ -8,6 +8,10 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- compile SFML
 vim.keymap.set("n", "<leader>sf", "<cmd>silent !g++ *.cpp -o sfml-new-app -lsfml-graphics -lsfml-window -lsfml-system<CR>")
 
+-- run program
+vim.keymap.set("n", "<leader>sx", ":!./*-app<CR>")
+
+
 -- multicursor shenanigans
 
 --set directory for retarded compiler...
