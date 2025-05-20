@@ -4,11 +4,9 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --my custom trash open
 --{
--- compile SFML
 
-vim.keymap.set("n", "<leader>sf", function()
-    vim.cmd "!g++ *.cpp -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system"
-end, {desc = 'compile all cpps in directory'})
+-- compile SFML
+vim.keymap.set("n", "<leader>sf", "<cmd>silent !g++ *.cpp -o sfml-new-app -lsfml-graphics -lsfml-window -lsfml-system<CR>")
 
 -- multicursor shenanigans
 
