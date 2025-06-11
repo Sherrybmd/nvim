@@ -12,7 +12,6 @@
   "cockpit": { "branch": "master", "commit": "2c9629041c9724fd208abb73c6d83cb7a09ff03c" },
   "compiler.nvim": { "branch": "main", "commit": "eb7f82bb8f9e722dd194f638e67ec53c12ce5ac5" },
   "conform.nvim": { "branch": "master", "commit": "0e93e0d12d2f7ebdea9e3e444dfaff0050cefbe6" },
-  "copilot.lua": { "branch": "master", "commit": "c1bb86abbed1a52a11ab3944ef00c8410520543d" },
   "fidget.nvim": { "branch": "main", "commit": "d9ba6b7bfe29b3119a610892af67602641da778e" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "gruvbox": { "branch": "main", "commit": "00e38a379bab3389e187b3953566d67d494dfddd" },
@@ -48,5 +47,6 @@
   "vim-fugitive": { "branch": "master", "commit": "4a745ea72fa93bb15dd077109afbb3d1809383f2" },
   "vim-guys": { "branch": "master", "commit": "8755164fad8b82407687d64614d94e5843969bc8" },
   "vim-with-me": { "branch": "master", "commit": "ed0c65594a6a0f5f98f8fbb69c5c44633846ec70" },
+  "vimspector": { "branch": "master", "commit": "5e24df822e278ee79abfc8c7110089a5322d1a3c" },
   "zen-mode.nvim": { "branch": "main", "commit": "863f150ca321b3dd8aa1a2b69b5f411a220e144f" }
 }
